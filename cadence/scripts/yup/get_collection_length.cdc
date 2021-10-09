@@ -1,5 +1,5 @@
-import NonFungibleToken from "../../contracts/NonFungibleToken.cdc"
-import YUP from "../../contracts/YUP.cdc"
+import NonFungibleToken from "./NonFungibleToken.cdc"
+import YUP from "./NonFungibleToken.cdc"
 
 pub fun main(address: Address): Int {
     let account = getAccount(address)

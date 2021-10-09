@@ -1,5 +1,5 @@
-import NonFungibleToken from 0x8b53b4e7951b6c13
-import YUP from 0x8b53b4e7951b6c13
+import NonFungibleToken from "./NonFungibleToken.cdc"
+import YUP from "./NonFungibleToken.cdc"
 
 transaction(recipient: Address, influencerID: UInt32, editionID: UInt32, serialNumber: UInt32, url: String) {
 
