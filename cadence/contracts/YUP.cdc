@@ -114,9 +114,9 @@ pub contract YUP: NonFungibleToken {
     }
 
 	init() {
-        self.CollectionStoragePath = /storage/yupCollection
-        self.CollectionPublicPath = /public/yupCollection
-        self.MinterStoragePath = /storage/yupMinter
+        self.CollectionStoragePath = /storage/YUP/yupCollection
+        self.CollectionPublicPath = /public/YUP/yupCollection
+        self.MinterStoragePath = /storage/YUP/yupMinter
         self.totalSupply = 0
         let minter <- create NFTMinter()
         self.account.save(<-minter, to: self.MinterStoragePath)
