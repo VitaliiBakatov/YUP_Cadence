@@ -1,3 +1,7 @@
+/**
+* SPDX-License-Identifier: UNLICENSED
+*/
+
 import NonFungibleToken from "./NonFungibleToken.cdc"
 
 pub contract YUP: NonFungibleToken {
@@ -114,9 +118,9 @@ pub contract YUP: NonFungibleToken {
     }
 
 	init() {
-        self.CollectionStoragePath = /storage/YUP/yupCollection
-        self.CollectionPublicPath = /public/YUP/yupCollection
-        self.MinterStoragePath = /storage/YUP/yupMinter
+        self.CollectionStoragePath = /storage/YUPMobileAppCollection
+        self.CollectionPublicPath = /public/YUPMobileAppCollection
+        self.MinterStoragePath = /storage/YUPMobileAppMinter
         self.totalSupply = 0
         let minter <- create NFTMinter()
         self.account.save(<-minter, to: self.MinterStoragePath)
